@@ -1,7 +1,8 @@
 import { useState } from "react";
 import * as XLSX from 'xlsx';
 import HeaderExplainer from "../components/headerExplainer";
-import Example from "../../../../development/sql-agent/src/components/example";
+
+
 
 function MappingDocument(){
     const [worksheets, setWorksheets] = useState({}); // { sheetName: data[][] }
@@ -51,7 +52,7 @@ function MappingDocument(){
                      file:bg-red-400 file:text-white
                  hover:file:bg-red-800" onChange={handleFile}/> 
      }else if(fileName.length > 0){
-      
+       console.log("hello")
      }
     return (
         
